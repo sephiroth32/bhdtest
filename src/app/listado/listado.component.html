@@ -1,0 +1,17 @@
+<button>Agregar Comentario</button>
+<div>
+    <table>
+        <thead>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Website</th>
+          <th>Accion</th>
+        </thead>
+        <tr *ngFor = "let comment of comments">
+          <td>{{comment.name}}</td>
+          <td>{{comment.email}}</td>
+          <td>{{comment.website}}</td>
+          <td><button>Editar</button></td>
+        </tr>
+      </table>
+</div>
